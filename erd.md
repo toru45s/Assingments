@@ -13,6 +13,7 @@ erDiagram
         int course_id FK
         date enrollment_date
         date last_login_date
+        boolean active
     }
 
     COURSES {
@@ -52,7 +53,6 @@ erDiagram
         int module_id PK
         int course_id FK
         string title
-        int expected_grade
     }
 
     ASSESSMENTS {
@@ -60,7 +60,9 @@ erDiagram
         int module_id FK
         int student_id FK
         int grade
-        date create_date
+        int expected_grade
+        date deadline_date
+        %% HOW TO FIND THE FINAL ASSESSMENT
     }
 
     SUBMISSIONS {
@@ -68,7 +70,6 @@ erDiagram
         int student_id FK
         int assessment_id FK
         date submission_date
-        date deadline_date
     }
 
     REVIEWS {
@@ -89,7 +90,7 @@ erDiagram
     STUDENTS ||--|{ SUBMISSIONS  : "Submit"
     INSTRUCTORS ||--|{ COURSES : "Teach"
 
-    ENROLLMENTS }|--|{ COURSES : "Enroll Courses"
+    ENROLLMENTS }|--|| COURSES : "Enroll Courses"
     SUBSCRIPTIONS ||--|| PAYMENT_RECORDS : "Payment"
     ENROLLMENTS ||--|| PAYMENT_RECORDS : "1:1"
 
