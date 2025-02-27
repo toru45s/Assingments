@@ -82,19 +82,17 @@ erDiagram
     }
 
 
-    STUDENTS ||--|{ ENROLLMENTS : "Enroll"
-    STUDENTS ||--|{ SUBSCRIPTIONS : "Subscribe"
-    STUDENTS }|--|{ PAYMENT_RECORDS : "Pay"
-    STUDENTS ||--|{ REVIEWS : "Write"
-    STUDENTS ||--|| ASSESSMENTS : "Assessment"
-    STUDENTS ||--|{ SUBMISSIONS  : "Submit"
-    INSTRUCTORS ||--|{ COURSES : "Teach"
-
-    ENROLLMENTS }|--|| COURSES : "Enroll Courses"
-    SUBSCRIPTIONS ||--|| PAYMENT_RECORDS : "Payment"
-    ENROLLMENTS ||--|| PAYMENT_RECORDS : "1:1"
-
-    COURSES ||--|{ REVIEWS : "Reviews"
-    COURSES }|--|{ MODULES : "modules in corses"
-    MODULES ||--|o ASSESSMENTS : "Assessment"
-    MODULES }|--|{ SUBMISSIONS : "Submission"
+    %% STUDENTS ||--|{ ENROLLMENTS : "Enroll"
+    %% STUDENTS ||--|{ SUBSCRIPTIONS : "Subscribe"
+    %% STUDENTS }|--|{ PAYMENT_RECORDS : "Pay"
+    %% STUDENTS ||--|{ REVIEWS : "Write"
+    %% STUDENTS ||--|| ASSESSMENTS : "Assessment"
+    %% STUDENTS ||--|{ SUBMISSIONS  : "Submit"
+    %% INSTRUCTORS ||--|{ COURSES : "Teach"
+    %% ENROLLMENTS }|--|| COURSES : "Enroll Courses"
+    %% SUBSCRIPTIONS ||--|| PAYMENT_RECORDS : "Payment"
+    ENROLLMENTS ||--|| PAYMENT_RECORDS : "Payment"
+    %% COURSES ||--|{ REVIEWS : "Reviews"
+    %% COURSES }|--|{ MODULES : "Modules in corses"
+    %% MODULES ||--|o ASSESSMENTS : "Assessment"
+    %% MODULES }|--|{ SUBMISSIONS : "Submission"
