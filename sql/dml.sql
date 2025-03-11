@@ -1,1 +1,10 @@
--- TODO
+INSERT INTO students (name) VALUES ('John Doe');
+INSERT INTO students (name) VALUES ('Alice Smith');
+INSERT INTO students (name) VALUES ('Bob Smith');
+INSERT INTO students (name) VALUES ('Charlie Brown');
+INSERT INTO students (name) VALUES ('Dora Brown');
+INSERT INTO students (name) VALUES ('Eve White');
+INSERT INTO students (name) VALUES ('Frank Black');
+INSERT INTO students (name) VALUES ('Grace Black');
+INSERT INTO students (name) VALUES ('Hank Green');
+INSERT INTO students (name) VALUES ('Ivy Green');
