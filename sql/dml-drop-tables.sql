@@ -1,0 +1,10 @@
+DROP TABLE "public"."subscriptions";
+DROP TABLE "public"."instructors";
+DROP TABLE "public"."modules";
+DROP TABLE "public"."payment_records";
+DROP TABLE "public"."reviews";
+DROP TABLE "public"."enrollments";
+DROP TABLE "public"."courses";
+DROP TABLE "public"."students";
+DROP TABLE "public"."submissions";
+DROP TABLE "public"."assessments"
