@@ -21,3 +21,12 @@ INSERT INTO instructors(name, email) VALUES
   ('George', 'george@cctb.com'),
   ('Ryan', 'ryan@cctb.com'),
   ('Susan', 'susan@cctb.com');
+
+insert into courses (instructor_id,title,category) values
+  (1,'Introduction programming','Tech'),
+  (2,'Introduction Bussiness','Bussiness'),
+  (1,'Introduction CSS','Tech'),
+  (3,'Arts I','Arts'),
+  (3,'Arts II','Arts'),
+  (4,'programming I','Tech'),
+  (1,'Data modeling','Tech');
