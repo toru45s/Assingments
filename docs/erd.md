@@ -60,8 +60,8 @@ erDiagram
         int module_id FK
         int student_id FK
         int submissions_id FK
-        int grade
-        int expected_grade
+        float grade
+        float expected_grade
         date deadline_date
         %% HOW TO FIND THE FINAL ASSESSMENT
     }
@@ -78,7 +78,7 @@ erDiagram
         int student_id FK
         int course_id FK
         float rating
-        string comments
+        string comment
         date review_date
     }
 
