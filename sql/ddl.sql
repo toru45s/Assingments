@@ -11,7 +11,9 @@ CREATE TABLE INSTRUCTORS (
 
 CREATE TABLE COURSES (
     course_id SERIAL PRIMARY KEY,
-        name VARCHAR(50)
+        instructor_id INT REFERENCES INSTRUCTORS(instructor_id),
+        title VARCHAR(50),
+        category VARCHAR(50)
         );
 
 CREATE TABLE ENROLLMENTS (
